@@ -1,0 +1,130 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+  background-color: #EEEEEE
+}
+footer {
+  padding: 30px 0;
+}
+
+/*Nav bar css*/ 
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.navbar-default {
+  color: white;
+  text-transform: uppercase;
+  background-color: #34459C;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-brand {
+  max-height: 20px;
+}
+
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}
+
+/*.navbar-fixed-top {
+  margin-top: 20px;
+  position: absolute;*/
+}
+
+.navbar a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:active {
+  font-weight: bold;
+} 
+
+/*.list-group-item  {
+  color: #34459C;
+  background-color: white
+}*/
+
+/*.list-group-item a:hover {
+  color: white;
+  background-color: #34459C
+}*/
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  z-index: 2;
+  color: #f7ca3d;
+  background-color: #34459c;
+  border-color: #34459C;
+  text-transform: uppercase;
+}
+
+.list-group-item-heading {
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
