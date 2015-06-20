@@ -47,6 +47,12 @@ footer {
   .hidden();
 }
 
+#brand-logo {
+  width: auto;
+  height: 90px;
+  padding-top: 0px;
+}
+
 /*.navbar-fixed-top {
   margin-top: 20px;
   position: absolute;*/
@@ -61,6 +67,9 @@ footer {
   font-weight: bold;
 } 
 
+.btn {
+  margin-top: 10px;
+}
 /*.list-group-item  {
   color: #34459C;
   background-color: white
